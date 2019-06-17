@@ -100,6 +100,10 @@ def case4():
             print(dm + 'Please, select one of the aboves options')
 def case5():
     global state
+
+    print(dm + 'Human its ok for you')
+    sleep(1)
+    print(user + '[a] Yeah!\n[b] WAAAAAAAAAAAAAAIIIIIIIT')
     while True:
         print(user + '> ', end = "")
         choise = input()
@@ -110,11 +114,19 @@ def case5():
             return
         elif choise == 'b':
             state = 10
+            sleep(1)
+            print(dm + 'Ugh. What is it?')
+            sleep(1)
+            print(user + '100% human is lame. Can i be part fantasy?')
             return
         else:
             print(dm + 'Please, select one of the aboves options')
 def case6():
     global state
+
+    print(dm + 'Nice! Wanna be human sized or tiny?')
+    sleep(1)
+    print(user + '[a] Kid-sized please!\n[b] I ain\'t pedo\n[c] ... is there a Big size?\n')
     while True:
         print(user + '> ', end = "")
         choise = input()
@@ -131,6 +143,10 @@ def case6():
             print(dm + 'Please, select one of the aboves options')
 def case7():
     global state
+
+    print(dm + 'Seriously, you could just like, be a dark and brooding white dude')
+    sleep(1)
+    print(user + '[a] Yeah, I guess you\'re right\n[b] NO. I wear the darkness on mi sleeve for all the world to see\n')
     while True:
         print(user + '> ', end = "")
         choise = input()
@@ -144,10 +160,24 @@ def case7():
             print(dm + 'Please, select one of the aboves options')
 def case8():
     global state
+
+    print(dm + 'You can\'t be a dragon')
+    sleep(1)
+    print(user + '[a] UGH\n[b] It\'s called Dungeons & Dragons you wangrod\n')
+    
     while True:
         print(user + '> ', end = "")
         choise = input()
         if choise == 'a':
+            print(user + 'UGH')
+            sleep(1)
+            print('FIIINE')
+            sleep(1)
+            print('YOU SUCK')
+            sleep(1)
+            print('FUN POLICE')
+            sleep(1)
+            print('SRYSLY')
             state = 2
             return
         elif choise == 'b':
@@ -157,6 +187,10 @@ def case8():
             print(dm + 'Please, select one of the aboves options')
 def case9():
     global state
+
+    print(dm + 'Wow. That\'s helpful. Is Animal Person weird enough for you?')
+    sleep(1)
+    print(user + '[a] Uh, like a furry?\n[b] Gross no, I said SPECIAL\n')
     while True:
         print(user + '> ', end = "")
         choise = input()
@@ -170,6 +204,10 @@ def case9():
             print(dm + 'Please, select one of the aboves options')
 def case10():
     global state
+
+    print(dm + '')
+    sleep(1)
+    print(user + '')
     while True:
         print(user + '> ', end = "")
         choise = input()
