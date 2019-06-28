@@ -205,9 +205,9 @@ def case9():
 def case10():
     global state
 
-    print(dm + '')
+    print(dm + 'Alright. Are you half monstrous or half magical and pretty?')
     sleep(1)
-    print(user + '')
+    print(user + '[a] Yeah I still wanna be magical and pretty\n[b] Nah, give me some monster blood!\n')
     while True:
         print(user + '> ', end = "")
         choise = input()
@@ -225,10 +225,18 @@ def case10():
             print(dm + 'Please, select one of the aboves options')
 def case11():
     global state
+
+    print(dm + 'Alright, are you only a bit silly or extremely silly?')
+    sleep(1)
+    print(user + '[a] I would like to maintain some semblance of gravitas\n[b] EVERYTHINGS IS MAGIC AND GLITTER\n[c] Can i have a bit of dark humor?\n')
+
     while True:
         print(user + '> ', end = "")
         choise = input()
         if choise == 'a':
+            print(dm + 'You are a Halfling!')
+            sleep(1)
+
             state = 18
             return
         elif choise == 'b':
