@@ -1089,7 +1089,7 @@ def case49():
         
     dm_print("OKAY YOU HAVE TENTACLES AND MUTATIONS AND YOU'RE LITERALLY A MAD SCIENCE EXPERIMENT")
     sleep(1)
-    u_print( "[a] This is the shit I'm talking about [b] No, I want to be mysterious")
+    u_print( "[a] This is the shit I'm talking about\n [b] No, I want to be mysterious\n")
     while True:
         u_print( "> ", end = "")
         choise = input()
