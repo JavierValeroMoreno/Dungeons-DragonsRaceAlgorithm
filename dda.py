@@ -31,7 +31,7 @@ def case1():
 
     global state
 
-    dm_print("Yay! Why do you wanna play High Adventure Pop Fantasy?\n")
+    dm_print("Yay! Why do you wanna play High Adventure Pop Fantasy?")
     sleep(TIME)
     u_print( "[a] I wanna go on adventures!\n"+
     "[b] Can i be someone from Lord of the Rings or somethings?\n"+
@@ -52,7 +52,6 @@ def case1():
             return
         elif choise == 'd':
             #Final 1
-            final(1)
             state = -1
             return
         else:
@@ -903,7 +902,7 @@ def case40():
         
     dm_print("Seriously? How about multiverse dwelling psionic plane hoppers?")
     sleep(1)
-    u_print( "[a] Okay, that's pretty fucking out there\n[b] That's just ugly elves with mind powers")
+    u_print( "[a] Okay, that's pretty fucking out there\n[b] That's just ugly elves with mind powers\n")
     while True:
         u_print( "> ", end = "")
         choise = input()
@@ -1036,13 +1035,13 @@ def case46():
         u_print( "> ", end = "")
         choise = input()
         if choise == 'a':
-            state = 49
             return
-        elif choise == 'b':
             #Final 50
             final(50)
             state = -1
             return
+        elif choise == 'b':
+            state = 49
         else:
             dm_print("Please, select one of the aboves options")
 def case47():
