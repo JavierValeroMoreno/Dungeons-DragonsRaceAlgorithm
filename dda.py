@@ -1035,13 +1035,13 @@ def case46():
         u_print( "> ", end = "")
         choise = input()
         if choise == 'a':
-            return
             #Final 50
             final(50)
             state = -1
             return
         elif choise == 'b':
             state = 49
+            return
         else:
             dm_print("Please, select one of the aboves options")
 def case47():
