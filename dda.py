@@ -1,30 +1,25 @@
+import colorama
 from colorama import Fore
 from time import sleep
 import platform
 import os
 
 #VARIABLES
-is_win = True if (platform.system() == "Windows") else False
+if (platform.system() == "Windows"):
+    colorama.init()
+
 state = 0
 user = Fore.WHITE
 dm = Fore.GREEN
 TIME = 1
+
 #METODOS
 
 def u_print(text, end="\n"):
-    if(is_win):
-        os.system("color 7")
-        print(text, end = end)
-        pass
-    else:
-        print(user + text, end = end)        
+    print(user + text, end = end)        
 
 def dm_print(text, end = "\n"):
-    if(is_win):
-        os.system("color 2")
-        print(text, end = end)
-    else:
-        print(dm + text, end = end)
+    print(dm + text, end = end)
 
 def case0():
     global state
